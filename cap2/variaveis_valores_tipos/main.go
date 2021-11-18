@@ -28,8 +28,8 @@ func main()  {
 	fmt.Println(w)
 	fmt.Println(k)
 
-	fmt.Println(inteiro)
-	fmt.Println(strings)
-	fmt.Println(booleano)
-	fmt.Println(float)
+	fmt.Printf("%v, %T\n", inteiro, inteiro)
+	fmt.Printf("%v, %T\n", strings, strings)
+	fmt.Printf("%v, %T\n", booleano, booleano)
+	fmt.Printf("%v, %T\n", float, float)
 }
