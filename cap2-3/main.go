@@ -4,6 +4,11 @@ import "fmt"
 
 var w = "escopo de pacote" // -> só disponível dentro do pacote
 
+var inteiro int // -> valor inicial 0 
+var strings string // -> valor inicial ""
+var booleano bool // -> valor inicial false
+var float float64 // -> valor inicial 0.0
+
 func main()  {
 	
 	x := 10
@@ -22,4 +27,9 @@ func main()  {
 
 	fmt.Println(w)
 	fmt.Println(k)
+
+	fmt.Println(inteiro)
+	fmt.Println(strings)
+	fmt.Println(booleano)
+	fmt.Println(float)
 }
