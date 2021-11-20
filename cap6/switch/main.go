@@ -9,7 +9,7 @@ func main() {
 	switch estaonotrabalhohoje {
 
 	case "maria", "ze":
-		fmt.Printf("Hoje é dia do Time 1")
+		fmt.Println("Hoje é dia do Time 1")
 	case "aria", "lia":
 		fmt.Println("Hoje é dia do Time 2")
 		fallthrough
@@ -19,4 +19,12 @@ func main() {
 		fmt.Println("folga")
 
 	}
+
+	x := 10
+	y := 10
+
+	fmt.Println(x == 10 || x == 11)
+	fmt.Println(x == 10 && y == 11)
+	fmt.Println(x != 10)
+	fmt.Println(!true || x == 11)
 }
