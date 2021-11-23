@@ -39,4 +39,19 @@ func main() {
 
 	sliceTeste := []int{1, 2, 3, 4, 5}
 	fmt.Println(append(sliceTeste[:2], sliceTeste[3:]...)) // pega o elemento 0,1 + os elementos 3 em diante
+
+	umaslice := []int{1, 2, 3}
+	outraslice := []int{3, 4, 5}
+	fmt.Println(append(umaslice, outraslice...)) // (slice, valores do slices) -> add os valores do slice
+
+	sliceMake := make([]int, 5, 10)
+	fmt.Println(append(sliceMake, 1, 2, 3, 4, 5))
+
+	ss := [][]int{
+		{1, 2, 3},
+		{4, 5, 6},
+		{7, 8, 9},
+	}
+
+	fmt.Println(ss[2][1])
 }
