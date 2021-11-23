@@ -13,7 +13,7 @@ func main() {
 
 	fmt.Printf("%T \n", numeros)
 
-	fmt.Println("----- Exercicio 02 -----")
+	fmt.Println("\n----- Exercicio 02 -----")
 	slice := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
 	for i, v := range slice {
@@ -22,7 +22,7 @@ func main() {
 
 	fmt.Printf("%T \n", slice)
 
-	fmt.Println("----- Exercicio 03 -----")
+	fmt.Println("\n----- Exercicio 03 -----")
 	fmt.Println(
 		slice[:3],
 		slice[4:],
@@ -30,7 +30,7 @@ func main() {
 		slice[2:len(slice)-1],
 	)
 
-	fmt.Println("----- Exercicio 04 -----")
+	fmt.Println("\n----- Exercicio 04 -----")
 	x := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
 
 	x = append(x, 52)
@@ -44,14 +44,14 @@ func main() {
 
 	fmt.Println(x)
 
-	fmt.Println("----- Exercicio 05 -----")
+	fmt.Println("\n----- Exercicio 05 -----")
 
 	z := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
 	w := append(z[:3], z[6:]...)
 
 	fmt.Println(w)
 
-	fmt.Println("----- Exercicio 06 -----")
+	fmt.Println("\n----- Exercicio 06 -----")
 
 	estados := make([]string, 26, 26)
 
@@ -66,5 +66,37 @@ func main() {
 
 	fmt.Println(len(estados), cap(estados))
 	fmt.Println(estados)
+
+	fmt.Println("\n----- Exercicio 07 -----")
+
+	dados := [][]string{
+		{"Ju", "Silva", "Jogar"},
+		{"Jão", "Santos", "Música"},
+		{"Zé", "Ferreira", "Esportes"},
+	}
+
+	for i, v := range dados {
+		fmt.Println(i, v)
+	}
+
+	fmt.Println("\n----- Exercicio 08 - 09 -----")
+
+	dadosMap := map[string][]string{
+		"silva_ju":    {"Jogar", "musica", "estudar"},
+		"ferreira_lu": {"Jogar", "musica", "estudar"},
+		"santos_ma":   {"Jogar", "musica", "estudar"},
+	}
+
+	for k, v := range dadosMap {
+		fmt.Println(k, v)
+	}
+
+	fmt.Println("\n----- Exercicio 08 - 09 -----")
+
+	delete(dadosMap, "silva_ju")
+
+	for k, v := range dadosMap {
+		fmt.Println(k, v)
+	}
 
 }
